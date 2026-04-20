@@ -1,0 +1,3015 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="가상의 브랜드를 직접 만들어보며 브랜딩 디자인의 전 과정(기획→기본시스템→응용시스템)을 체험하는 16차시 실습 교재입니다.">
+      
+      
+        <meta name="author" content="정선화 · 선린인터넷고 (EduFlow)">
+      
+      
+      
+        <link rel="prev" href="../chapter11/">
+      
+      
+        <link rel="next" href="../chapter13/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>12차시: 자유 응용물 제작 ① - 레이아웃과 시안 - 브랜딩 디자인 실습 교육자료</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#12-1-" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="브랜딩 디자인 실습 교육자료" class="md-header__button md-logo" aria-label="브랜딩 디자인 실습 교육자료" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            브랜딩 디자인 실습 교육자료
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              12차시: 자유 응용물 제작 ① - 레이아웃과 시안
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 1 - 브랜딩의 이해와 기획
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter05/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 2 - 기본 디자인 시스템 구축
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../chapter10/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 3 - 응용 시스템 실습
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter15/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 4 - 마무리: 발표와 성찰
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="브랜딩 디자인 실습 교육자료" class="md-nav__button md-logo" aria-label="브랜딩 디자인 실습 교육자료" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    브랜딩 디자인 실습 교육자료
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 1 - 브랜딩의 이해와 기획
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 1 - 브랜딩의 이해와 기획
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1차시: 브랜딩이란 무엇인가?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2차시: 국내 브랜드 사례 분석하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3차시: 나의 가상 브랜드 콘셉트 설계하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4차시: 브랜드 네이밍과 슬로건 만들기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2 - 기본 디자인 시스템 구축
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 2 - 기본 디자인 시스템 구축
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5차시: 로고 심볼 스케치와 아이데이션
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6차시: 로고타입과 시그니처 완성하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7차시: 브랜드 컬러 시스템 설계하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8차시: 브랜드 타이포그래피 규정 만들기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9차시: 그리드·여백 규정과 기본시스템 통합
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 3 - 응용 시스템 실습
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 3 - 응용 시스템 실습
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10차시: 명함 디자인 실습 (필수 응용물)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11차시: 자유 응용물 선정과 기획
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12차시: 자유 응용물 제작 ① - 레이아웃과 시안
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12차시: 자유 응용물 제작 ① - 레이아웃과 시안
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤔 왜 이걸 배우나요?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 오늘의 핵심 주제
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 오늘의 핵심 주제">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 레이아웃 그리드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔄 매체별 변형 원칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 1차 시안 제작
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💬 동료 피드백
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱️ 수업 흐름
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏱️ 수업 흐름">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        도입: 같은 로고, 다른 얼굴 (7분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 학습: 그리드와 매체별 원칙 (13분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실습: 1차 시안 제작 (22분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        정리: 자가 점검 &amp; 동료 피드백 (8분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Step 1. 도입 — 같은 로고, 다른 얼굴 (7분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Step 1. 도입 — 같은 로고, 다른 얼굴 (7분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        관찰 활동: 스타벅스는 어떻게 변신하나요?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        생각해보기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Step 2. 개념 학습 — 그리드와 매체별 원칙 (13분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Step 2. 개념 학습 — 그리드와 매체별 원칙 (13분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        핵심 개념 ① 레이아웃 그리드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        그리드의 3요소
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        매체별 추천 그리드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        핵심 개념 ② 매체별 변형 원칙
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="핵심 개념 ② 매체별 변형 원칙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        원칙 1: 최소 크기 원칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-clear-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        원칙 2: 보호 영역(Clear Space) 원칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        원칙 3: 컬러 대비 원칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        원칙 4: 시각적 위계 원칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-1-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Step 3. 실습 — 1차 시안 제작 (22분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Step 3. 실습 — 1차 시안 제작 (22분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        오늘 만들 응용물 선택 확인
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        제작 순서
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        단계 1: 규격 설정 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        단계 2: 그리드 구축 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        단계 3: 요소 배치 (8분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        단계 4: 컬러·타이포 적용 (6분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        단계 5: 자가 점검 (2분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤝 Step 4. 정리 — 동료 피드백 (8분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤝 Step 4. 정리 — 동료 피드백 (8분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        짝과 시안 교환하기 (5분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        수정 포인트 정리 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 평가
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 평가">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 형성 평가
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 자기점검 체크리스트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💭 성찰 &amp; 다음 차시 미리보기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💭 성찰 &amp; 다음 차시 미리보기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        오늘의 성찰
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        오늘 배운 것을 한 문장으로
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔜 다음 차시 미리보기: 13차시 — 자유 응용물 제작 ② 완성과 디테일
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎒 오늘의 과제 (선택)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13차시: 자유 응용물 제작 ② - 디테일과 목업
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14차시: 브랜드 가이드북 통합 편집
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 4 - 마무리: 발표와 성찰
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 4 - 마무리: 발표와 성찰
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15차시: 브랜드 발표와 상호 피드백
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16차시: 프로젝트 성찰과 브랜딩 여정 정리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤔 왜 이걸 배우나요?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 오늘의 핵심 주제
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 오늘의 핵심 주제">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 레이아웃 그리드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔄 매체별 변형 원칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 1차 시안 제작
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💬 동료 피드백
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱️ 수업 흐름
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏱️ 수업 흐름">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        도입: 같은 로고, 다른 얼굴 (7분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 학습: 그리드와 매체별 원칙 (13분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실습: 1차 시안 제작 (22분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        정리: 자가 점검 &amp; 동료 피드백 (8분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Step 1. 도입 — 같은 로고, 다른 얼굴 (7분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Step 1. 도입 — 같은 로고, 다른 얼굴 (7분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        관찰 활동: 스타벅스는 어떻게 변신하나요?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        생각해보기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Step 2. 개념 학습 — 그리드와 매체별 원칙 (13분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Step 2. 개념 학습 — 그리드와 매체별 원칙 (13분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        핵심 개념 ① 레이아웃 그리드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        그리드의 3요소
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        매체별 추천 그리드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        핵심 개념 ② 매체별 변형 원칙
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="핵심 개념 ② 매체별 변형 원칙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        원칙 1: 최소 크기 원칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-clear-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        원칙 2: 보호 영역(Clear Space) 원칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        원칙 3: 컬러 대비 원칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        원칙 4: 시각적 위계 원칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-1-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Step 3. 실습 — 1차 시안 제작 (22분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Step 3. 실습 — 1차 시안 제작 (22분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        오늘 만들 응용물 선택 확인
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        제작 순서
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        단계 1: 규격 설정 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        단계 2: 그리드 구축 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        단계 3: 요소 배치 (8분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        단계 4: 컬러·타이포 적용 (6분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        단계 5: 자가 점검 (2분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤝 Step 4. 정리 — 동료 피드백 (8분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤝 Step 4. 정리 — 동료 피드백 (8분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        짝과 시안 교환하기 (5분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        수정 포인트 정리 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 평가
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 평가">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 형성 평가
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 자기점검 체크리스트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💭 성찰 &amp; 다음 차시 미리보기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💭 성찰 &amp; 다음 차시 미리보기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        오늘의 성찰
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        오늘 배운 것을 한 문장으로
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔜 다음 차시 미리보기: 13차시 — 자유 응용물 제작 ② 완성과 디테일
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎒 오늘의 과제 (선택)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="네비게이션" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../chapter10/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Part 3 - 응용 시스템 실습
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="12-1-">12차시: 자유 응용물 제작 ① - 레이아웃과 시안<a class="headerlink" href="#12-1-" title="Permanent link">&para;</a></h1>
+<div class="lesson-banner">
+<p><strong>⏰ 50분</strong> · 레이아웃 · 시안 제작 · 매체 특성 · 기본시스템 변형 · <strong>난이도</strong> ●●●○○</p>
+<p><strong>학습목표</strong>: 선택한 응용물의 레이아웃을 구성하고, 기본시스템을 매체 특성에 맞게 적용한 1차 시안을 완성할 수 있다.</p>
+<blockquote>
+<p><strong>오늘의 질문</strong>: "같은 로고인데, 왜 명함에서는 멋져 보이고 인스타그램에서는 뭉개져 보일까요?"</p>
+</blockquote>
+</div>
+<hr />
+<h2 id="_1">🤔 왜 이걸 배우나요?<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>11차시까지 우리는 브랜드의 <strong>기본시스템</strong>(로고, 컬러, 타이포)을 완성했습니다. 하지만 기본시스템은 <strong>'재료'</strong>일 뿐입니다. 실제로 세상에 나가려면 명함, 포스터, 패키지, SNS 게시물 같은 <strong>'요리'</strong>로 만들어져야 합니다.</p>
+<p>문제는 같은 재료라도 요리마다 조리법이 다르다는 점입니다. 명함은 손에 쥐고 가까이 보지만, 간판은 10미터 밖에서 봅니다. 인스타그램 프로필은 지름 3cm의 동그라미 안에 들어가야 합니다. <strong>매체가 다르면 로고의 크기, 여백, 배치가 모두 달라져야 합니다.</strong></p>
+<p>오늘은 여러분이 선택한 응용물에 브랜드를 어떻게 '요리'할지 결정하고, 1차 시안을 만들어봅니다.</p>
+<hr />
+<h2 id="_2">🎯 오늘의 핵심 주제<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="cards-grid">
+<div class="card card-orange">
+<h3 id="_3">🧠 레이아웃 그리드<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>요소를 질서 있게 배치하기 위한 보이지 않는 뼈대</p>
+</div>
+<div class="card card-orange">
+<h3 id="_4">🔄 매체별 변형 원칙<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>기본시스템을 매체 크기·용도에 맞게 재배치하는 규칙</p>
+</div>
+<div class="card card-blue">
+<h3 id="1">🎨 1차 시안 제작<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>규격 설정 → 그리드 → 요소 배치 → 자가 점검</p>
+</div>
+<div class="card card-green">
+<h3 id="_5">💬 동료 피드백<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>짝과 시안을 교환해 수정 포인트 도출</p>
+</div>
+</div>
+<hr />
+<h2 id="_6">⏱️ 수업 흐름<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<div class="steps">
+<div class="step">
+<h4 id="7">도입: 같은 로고, 다른 얼굴 (7분)<a class="headerlink" href="#7" title="Permanent link">&para;</a></h4>
+<p>브랜드가 매체에 따라 어떻게 변형되는지 실제 사례로 관찰합니다.</p>
+</div>
+<div class="step">
+<h4 id="13">개념 학습: 그리드와 매체별 원칙 (13분)<a class="headerlink" href="#13" title="Permanent link">&para;</a></h4>
+<p>레이아웃 그리드와 매체별 변형 원칙을 익힙니다.</p>
+</div>
+<div class="step">
+<h4 id="1-22">실습: 1차 시안 제작 (22분)<a class="headerlink" href="#1-22" title="Permanent link">&para;</a></h4>
+<p>규격을 설정하고, 그리드 위에 기본시스템을 배치합니다.</p>
+</div>
+<div class="step">
+<h4 id="8">정리: 자가 점검 &amp; 동료 피드백 (8분)<a class="headerlink" href="#8" title="Permanent link">&para;</a></h4>
+<p>체크리스트로 점검하고 짝과 시안을 교환해 피드백을 주고받습니다.</p>
+</div>
+</div>
+<hr />
+<h2 id="step-1-7">📚 Step 1. 도입 — 같은 로고, 다른 얼굴 (7분)<a class="headerlink" href="#step-1-7" title="Permanent link">&para;</a></h2>
+<h3 id="_7">관찰 활동: 스타벅스는 어떻게 변신하나요?<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>여러분이 아는 스타벅스 로고를 떠올려보세요. 그런데 이 로고는 장소마다 조금씩 <strong>다르게</strong> 등장합니다.</p>
+<table>
+<thead>
+<tr>
+<th>매체</th>
+<th>로고 형태</th>
+<th>여백</th>
+<th>왜 이렇게?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>종이컵</td>
+<td>원형 엠블럼 전체</td>
+<td>여백 많음</td>
+<td>손으로 쥐었을 때 가려지지 않게</td>
+</tr>
+<tr>
+<td>매장 간판</td>
+<td>원형 엠블럼 크게</td>
+<td>여백 적음</td>
+<td>멀리서도 인식되어야 함</td>
+</tr>
+<tr>
+<td>인스타그램 프로필</td>
+<td>세이렌 얼굴만 확대</td>
+<td>없음</td>
+<td>지름 3cm 원 안에 들어가야 함</td>
+</tr>
+<tr>
+<td>앱 아이콘</td>
+<td>세이렌 얼굴 + 녹색 배경</td>
+<td>사각형</td>
+<td>모서리 둥근 사각형 규격</td>
+</tr>
+<tr>
+<td>영수증</td>
+<td>단색 텍스트 로고</td>
+<td>한 줄</td>
+<td>감열지 인쇄 한계</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>핵심 통찰</strong>: 브랜드는 '고정된 그림'이 아니라 <strong>'상황에 적응하는 시스템'</strong>입니다. 매체의 크기, 거리, 인쇄 방식에 따라 같은 로고도 다른 옷을 입습니다.</p>
+</blockquote>
+<h3 id="_8">생각해보기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>내가 만든 브랜드의 로고를 인스타그램 프로필(원형, 320x320px)에 넣는다면, 원본 그대로 넣어도 알아볼 수 있을까요?</li>
+<li>명함(9x5cm)에 넣는 로고와 포스터(A2)에 넣는 로고는 어떻게 달라야 할까요?</li>
+</ul>
+<hr />
+<h2 id="step-2-13">📚 Step 2. 개념 학습 — 그리드와 매체별 원칙 (13분)<a class="headerlink" href="#step-2-13" title="Permanent link">&para;</a></h2>
+<h3 id="1_1">핵심 개념 ① 레이아웃 그리드<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<p><strong>비유</strong>: 그리드는 <strong>'보이지 않는 모눈종이'</strong>입니다. 완성된 디자인에는 선이 보이지 않지만, 디자이너는 이 선을 기준으로 모든 요소를 배치합니다. 신문이 깔끔해 보이는 이유, 잡지가 정돈되어 보이는 이유가 바로 그리드 때문입니다.</p>
+<p><strong>정의</strong>: 레이아웃 그리드는 페이지를 일정한 칸과 여백으로 나누어, 요소들이 시각적 질서를 갖고 배치되도록 돕는 구조입니다.</p>
+<h3 id="3">그리드의 3요소<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<div class="mermaid">flowchart LR
+  A[마진&lt;br/&gt;외곽 여백] --&gt; D[그리드 시스템]
+  B[컬럼&lt;br/&gt;세로 칸] --&gt; D
+  C[거터&lt;br/&gt;칸 사이 간격] --&gt; D
+  D --&gt; E[시각적 질서]</div>
+<table>
+<thead>
+<tr>
+<th>요소</th>
+<th>역할</th>
+<th>실생활 비유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>마진(Margin)</strong></td>
+<td>페이지 바깥쪽 여백</td>
+<td>액자의 프레임</td>
+</tr>
+<tr>
+<td><strong>컬럼(Column)</strong></td>
+<td>내용이 들어가는 세로 칸</td>
+<td>책장의 칸막이</td>
+</tr>
+<tr>
+<td><strong>거터(Gutter)</strong></td>
+<td>컬럼과 컬럼 사이 간격</td>
+<td>책장 사이의 통로</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_9">매체별 추천 그리드<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>매체</th>
+<th>권장 컬럼</th>
+<th>마진</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>명함 (9x5cm)</td>
+<td>2-3 컬럼</td>
+<td>3-5mm</td>
+<td>작으므로 요소 2-3개만</td>
+</tr>
+<tr>
+<td>포스터 (A2)</td>
+<td>6-12 컬럼</td>
+<td>15-25mm</td>
+<td>위계가 명확해야 함</td>
+</tr>
+<tr>
+<td>SNS 정사각형 (1080x1080)</td>
+<td>3x3 그리드</td>
+<td>80-100px</td>
+<td>중앙 정렬 선호</td>
+</tr>
+<tr>
+<td>패키지 전개도</td>
+<td>면마다 별도</td>
+<td>안전영역 5mm</td>
+<td>접히는 선 주의</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="2">핵심 개념 ② 매체별 변형 원칙<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>기본시스템을 매체에 적용할 때 지켜야 할 4가지 원칙입니다.</p>
+<h4 id="1_2">원칙 1: 최소 크기 원칙<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h4>
+<p>로고에는 <strong>"이보다 작아지면 안 되는 최소 크기"</strong>가 있습니다. 예를 들어 가로 로고는 보통 20mm, 심볼은 10mm 이하로 줄이지 않습니다. 작아지면 디테일이 뭉개지기 때문입니다.</p>
+<blockquote>
+<p><strong>Tip</strong>: 작은 매체(파비콘, SNS 프로필)에서는 <strong>심볼만</strong> 사용하세요. 워드마크(글자 로고)는 가독성을 잃습니다.</p>
+</blockquote>
+<h4 id="2-clear-space">원칙 2: 보호 영역(Clear Space) 원칙<a class="headerlink" href="#2-clear-space" title="Permanent link">&para;</a></h4>
+<p>로고 주변에는 <strong>'개인 공간'</strong>이 필요합니다. 다른 요소가 이 영역에 침범하면 로고가 답답해 보입니다. 보통 로고 높이의 1/2 이상을 비워둡니다.</p>
+<h4 id="3_1">원칙 3: 컬러 대비 원칙<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h4>
+<p>배경 색상에 따라 로고 색상을 바꿔야 합니다. 밝은 배경에는 원본, 어두운 배경에는 반전(네거티브) 버전을 사용합니다.</p>
+<table>
+<thead>
+<tr>
+<th>배경</th>
+<th>로고 버전</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>흰색/밝은색</td>
+<td>원본 컬러</td>
+</tr>
+<tr>
+<td>브랜드 메인 컬러</td>
+<td>화이트/블랙</td>
+</tr>
+<tr>
+<td>어두운 배경</td>
+<td>화이트 네거티브</td>
+</tr>
+<tr>
+<td>사진/복잡한 배경</td>
+<td>단색 + 반투명 박스</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4">원칙 4: 시각적 위계 원칙<a class="headerlink" href="#4" title="Permanent link">&para;</a></h4>
+<p>한 화면에 모든 것을 똑같이 크게 넣으면 <strong>아무것도 안 보입니다.</strong> 가장 중요한 것 → 두 번째 → 세 번째 순으로 크기와 굵기를 다르게 합니다.</p>
+<div class="mermaid">flowchart TD
+  A[1순위: 주목 요소&lt;br/&gt;가장 큼, 가장 강함] --&gt; B[2순위: 핵심 정보&lt;br/&gt;중간 크기]
+  B --&gt; C[3순위: 보조 정보&lt;br/&gt;작고 연함]</div>
+<p>예시 (포스터의 경우):
+- 1순위: 이벤트 제목 또는 메인 이미지
+- 2순위: 날짜·장소
+- 3순위: 로고, 주최자, 문의처</p>
+<hr />
+<h2 id="step-3-1-22">📚 Step 3. 실습 — 1차 시안 제작 (22분)<a class="headerlink" href="#step-3-1-22" title="Permanent link">&para;</a></h2>
+<h3 id="_10">오늘 만들 응용물 선택 확인<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>11차시에서 선택한 응용물 중 <strong>1개</strong>를 오늘 시안으로 만듭니다. (예: 명함 / 포스터 / SNS 게시물 / 패키지 / 간판)</p>
+<h3 id="_11">제작 순서<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<div class="mermaid">flowchart LR
+  A[1. 규격 설정] --&gt; B[2. 그리드 구축]
+  B --&gt; C[3. 요소 배치]
+  C --&gt; D[4. 컬러·타이포 적용]
+  D --&gt; E[5. 자가 점검]</div>
+<hr />
+<h3 id="1-3">단계 1: 규격 설정 (3분)<a class="headerlink" href="#1-3" title="Permanent link">&para;</a></h3>
+<p>아트보드(작업 화면) 크기를 정확히 설정합니다.</p>
+<table>
+<thead>
+<tr>
+<th>응용물</th>
+<th>표준 규격</th>
+<th>해상도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>명함</td>
+<td>90 x 50 mm</td>
+<td>300 dpi (인쇄)</td>
+</tr>
+<tr>
+<td>A4 포스터</td>
+<td>210 x 297 mm</td>
+<td>300 dpi</td>
+</tr>
+<tr>
+<td>인스타그램 정사각</td>
+<td>1080 x 1080 px</td>
+<td>72 dpi (화면)</td>
+</tr>
+<tr>
+<td>인스타그램 스토리</td>
+<td>1080 x 1920 px</td>
+<td>72 dpi</td>
+</tr>
+<tr>
+<td>유튜브 썸네일</td>
+<td>1280 x 720 px</td>
+<td>72 dpi</td>
+</tr>
+<tr>
+<td>패키지(박스 전개도)</td>
+<td>실측 후 전개</td>
+<td>300 dpi</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>주의</strong>: 인쇄물은 <strong>재단여백(Bleed) 3mm</strong>를 추가해서 만드세요. (명함이면 96x56mm로 작업)</p>
+</blockquote>
+<hr />
+<h3 id="2-3">단계 2: 그리드 구축 (3분)<a class="headerlink" href="#2-3" title="Permanent link">&para;</a></h3>
+<p>선택한 매체에 맞는 그리드를 설정합니다.</p>
+<p><strong>실습 워크시트</strong></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내 응용물에 적용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>매체 이름</td>
+<td></td>
+</tr>
+<tr>
+<td>전체 크기</td>
+<td></td>
+</tr>
+<tr>
+<td>마진 (상·하·좌·우)</td>
+<td></td>
+</tr>
+<tr>
+<td>컬럼 개수</td>
+<td></td>
+</tr>
+<tr>
+<td>거터 크기</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="3-8">단계 3: 요소 배치 (8분)<a class="headerlink" href="#3-8" title="Permanent link">&para;</a></h3>
+<p>그리드 위에 어떤 요소를 어디에 놓을지 <strong>러프 스케치</strong>부터 합니다. 바로 화면에 그리지 말고, 종이에 엄지손톱만 한 <strong>썸네일 스케치</strong>를 3-5개 그려본 후 가장 좋은 것을 선택하세요.</p>
+<p><strong>배치 체크리스트</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 로고의 위치와 크기를 결정했나요? (최소 크기 이상인가요?)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 로고 주변에 보호 영역을 확보했나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 가장 중요한 정보가 가장 크게 표현되었나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 요소들이 그리드 라인에 정렬되어 있나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 여백이 충분해서 답답하지 않은가요?</li>
+</ul>
+<hr />
+<h3 id="4-6">단계 4: 컬러·타이포 적용 (6분)<a class="headerlink" href="#4-6" title="Permanent link">&para;</a></h3>
+<p>기본시스템에서 정한 컬러 팔레트와 지정 서체를 적용합니다.</p>
+<p><strong>컬러 적용 원칙</strong>
+- 메인 컬러는 <strong>한 곳</strong>에 포인트로 (전체 면적의 20-30%)
+- 배경은 화이트 또는 연한 서브 컬러
+- 텍스트는 가독성 확보 (배경 대비 충분히)</p>
+<p><strong>타이포 적용 원칙</strong>
+- 지정 서체(헤드라인용/본문용) 외에는 쓰지 않기
+- 크기 단계는 3-4개로 제한 (예: 24pt / 14pt / 10pt)
+- 한 줄 길이는 너무 길지 않게 (한글 기준 15-25자)</p>
+<hr />
+<h3 id="5-2">단계 5: 자가 점검 (2분)<a class="headerlink" href="#5-2" title="Permanent link">&para;</a></h3>
+<p>아래 표로 1차 시안을 스스로 점검합니다.</p>
+<table>
+<thead>
+<tr>
+<th>점검 항목</th>
+<th>O/X</th>
+<th>메모</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>로고가 원칙(최소 크기·보호 영역)을 지키고 있는가</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>브랜드 컬러가 정확히 사용되었는가</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>지정 서체만 사용되었는가</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>시각적 위계가 명확한가</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>그리드에 정렬되어 있는가</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>매체 특성(크기·보는 거리)을 고려했는가</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="step-4-8">🤝 Step 4. 정리 — 동료 피드백 (8분)<a class="headerlink" href="#step-4-8" title="Permanent link">&para;</a></h2>
+<h3 id="5">짝과 시안 교환하기 (5분)<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<p>짝에게 내 시안을 보여주며 아래 3가지를 물어보세요. 그리고 짝의 시안에 대해서도 같은 질문에 답해주세요.</p>
+<p><strong>피드백 3질문</strong></p>
+<table>
+<thead>
+<tr>
+<th>질문</th>
+<th>짝의 답변 기록</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 이 시안에서 가장 먼저 눈에 들어오는 것은 무엇인가요?</td>
+<td></td>
+</tr>
+<tr>
+<td>② 어떤 브랜드 느낌이 드나요? (3개 형용사로)</td>
+<td></td>
+</tr>
+<tr>
+<td>③ 수정하면 더 좋아질 부분은 어디일까요?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>① 답이 '내가 의도한 것'과 다르다면 → 시각적 위계를 다시 점검
+② 답이 브랜드 콘셉트와 다르다면 → 컬러·서체·이미지 선택 재검토
+③ 답을 그대로 반영하지 말고, <strong>'왜 그런 피드백이 나왔을까'</strong> 생각하세요</p>
+</blockquote>
+<h3 id="3_2">수정 포인트 정리 (3분)<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h3>
+<p>자가 점검 + 동료 피드백을 종합해 <strong>다음 차시에 수정할 3가지</strong>를 기록합니다.</p>
+<table>
+<thead>
+<tr>
+<th>우선순위</th>
+<th>수정할 내용</th>
+<th>수정 이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1순위</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2순위</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3순위</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_12">⚠️ 자주 하는 실수<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>실수</th>
+<th>해결책</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>로고를 너무 크게 넣기</td>
+<td>로고는 "어디 브랜드인지 알려주는" 역할. 주인공은 메시지·이미지</td>
+</tr>
+<tr>
+<td>여백 없이 가득 채우기</td>
+<td>여백은 버리는 공간이 아니라 <strong>'숨 쉬는 공간'</strong></td>
+</tr>
+<tr>
+<td>서체를 3종 이상 섞기</td>
+<td>지정 서체만 사용, 크기와 굵기로 변화 주기</td>
+</tr>
+<tr>
+<td>그리드 무시하고 자유 배치</td>
+<td>디자인은 <strong>'정돈된 자유'</strong>, 기준선 없이는 산만해짐</td>
+</tr>
+<tr>
+<td>화면에서만 확인하기</td>
+<td>인쇄물은 반드시 <strong>실제 크기로 출력</strong>해 손에 쥐고 확인</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_13">📝 평가<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<div class="assessment">
+<h3 id="_14">📝 형성 평가<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p><strong>객관식 1.</strong> 로고의 '보호 영역(Clear Space)'에 대한 설명으로 옳은 것은?</p>
+<p>① 로고를 인쇄할 때 사용하는 특수 필름의 이름이다
+② 로고 주변에 다른 요소가 침범하지 못하도록 확보하는 여백이다
+③ 로고 파일을 저장하는 컴퓨터 폴더 이름이다
+④ 로고에 사용되는 저작권 보호 구역이다</p>
+<details>
+<summary>정답 확인</summary>
+
+**정답: ②** 보호 영역은 로고 주변에 확보하는 최소 여백으로, 다른 요소가 침범해 로고의 인식을 방해하지 않도록 하는 규칙입니다.
+
+</details>
+<p><strong>객관식 2.</strong> 인스타그램 프로필 이미지(지름 약 3cm 원형)에 적용할 로고로 가장 적절한 것은?</p>
+<p>① 가로로 긴 워드마크 전체
+② 영문 풀네임 + 심볼 조합
+③ 심볼만 분리해 사용한 단순 버전
+④ 슬로건까지 포함한 전체 로고</p>
+<details>
+<summary>정답 확인</summary>
+
+**정답: ③** 작은 매체에서는 디테일이 뭉개지므로, 심볼만 분리한 단순 버전을 사용해야 인식력이 유지됩니다. (최소 크기 원칙)
+
+</details>
+<p><strong>객관식 3.</strong> 레이아웃 그리드의 '거터(Gutter)'가 의미하는 것은?</p>
+<p>① 페이지 바깥 여백
+② 컬럼과 컬럼 사이의 간격
+③ 로고의 최소 크기
+④ 인쇄 시 재단되는 영역</p>
+<details>
+<summary>정답 확인</summary>
+
+**정답: ②** 거터는 컬럼 사이의 간격으로, 내용이 서로 붙어 보이지 않도록 분리하는 역할을 합니다. ①은 마진, ④는 블리드(Bleed)입니다.
+
+</details>
+<p><strong>서술형.</strong> 내가 오늘 제작한 응용물에 기본시스템(로고·컬러·타이포)을 어떻게 변형해 적용했는지, 매체 특성과 연결하여 3-4문장으로 설명하세요.</p>
+<details>
+<summary>답안 예시</summary>
+
+예시: "저는 카페 브랜드의 인스타그램 정사각형 게시물을 제작했습니다. 화면이 작고 스크롤하며 보는 매체이므로, 로고는 심볼만 사용하고 오른쪽 하단에 작게 배치했습니다. 메인 컬러인 연한 베이지를 배경 전체에 깔아 브랜드 톤을 느끼게 했고, 헤드라인 서체를 크게 써서 2-3초 안에 메시지가 읽히도록 했습니다."
+
+</details>
+<h3 id="_15">✅ 자기점검 체크리스트<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 선택한 응용물의 정확한 규격으로 아트보드를 설정했다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 레이아웃 그리드(- [ ] 선택한 응용물의 정확한 규격으로 아트보드를 설정했다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 레이아웃 그리드(마진·컬럼·거터)를 구축했다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 기본시스템(로고·컬러·타이포)을 매체 특성에 맞게 변형해 적용했다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 시각적 위계가 명확한 1차 시안을 완성했다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 자가 점검과 동료 피드백을 통해 수정 포인트 3가지를 도출했다</li>
+</ul>
+</div>
+<hr />
+<h2 id="_16">💭 성찰 &amp; 다음 차시 미리보기<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<h3 id="_17">오늘의 성찰<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>아래 질문에 한 문장씩 답해보세요.</p>
+<table>
+<thead>
+<tr>
+<th>질문</th>
+<th>내 답변</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>오늘 시안을 만들면서 가장 고민한 순간은?</td>
+<td></td>
+</tr>
+<tr>
+<td>기본시스템을 매체에 적용할 때 가장 어려웠던 점은?</td>
+<td></td>
+</tr>
+<tr>
+<td>동료의 피드백 중 가장 인상 깊었던 한마디는?</td>
+<td></td>
+</tr>
+<tr>
+<td>다음 차시에 꼭 해결하고 싶은 한 가지는?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_18">오늘 배운 것을 한 문장으로<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>"브랜드는 고정된 그림이 아니라, 매체에 맞춰 옷을 갈아입는 시스템이다."</strong></p>
+<p>같은 로고라도 명함에서는 작게, 포스터에서는 크게, 인스타에서는 심볼만으로 등장합니다. 이 모든 변형을 관통하는 것은 <strong>기본시스템의 원칙</strong>입니다. 원칙을 지키되 매체에 적응하는 것, 이것이 응용 시스템 디자인의 핵심입니다.</p>
+</blockquote>
+<h3 id="13-2">🔜 다음 차시 미리보기: 13차시 — 자유 응용물 제작 ② 완성과 디테일<a class="headerlink" href="#13-2" title="Permanent link">&para;</a></h3>
+<p>다음 시간에는 오늘 도출한 <strong>수정 포인트 3가지</strong>를 반영해 시안을 완성도 있게 다듬습니다.</p>
+<ul>
+<li>오늘의 수정 포인트 반영 및 정교화</li>
+<li>인쇄/출력용 파일 준비 (해상도, 컬러 모드, 재단여백)</li>
+<li>실제 크기로 출력·목업 확인</li>
+<li>최종본 저장 및 포트폴리오 정리</li>
+</ul>
+<blockquote>
+<p><strong>다음 차시 준비물</strong>
+- 오늘 작업 파일 (반드시 저장 후 백업)
+- 수정 포인트 메모 (우선순위 1-3위)
+- A4 용지 또는 해당 매체의 실제 규격 종이 (출력 확인용)</p>
+</blockquote>
+<hr />
+<h3 id="_19">🎒 오늘의 과제 (선택)<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p>시간이 남는다면 오늘 만든 시안을 실제 크기로 <strong>종이에 출력</strong>해 손에 쥐고 확인해보세요. 화면으로 볼 때와 실제로 들었을 때의 느낌은 놀랄 만큼 다릅니다. 이때 발견한 어색함은 다음 차시 수정 1순위가 됩니다.</p>
+<blockquote>
+<p>💡 <strong>디자이너의 팁</strong>: 좋은 디자이너는 '완벽한 첫 시안'을 만드는 사람이 아니라, <strong>'피드백을 잘 받아들이는 사람'</strong>입니다. 오늘 만든 시안이 마음에 들지 않아도 괜찮습니다. 수정할 부분을 3개나 찾아냈다는 것이 오히려 큰 성장입니다.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+          
+          <a href="../chapter11/" class="md-footer__link md-footer__link--prev" aria-label="이전: 11차시: 자유 응용물 선정과 기획">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                11차시: 자유 응용물 선정과 기획
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../chapter13/" class="md-footer__link md-footer__link--next" aria-label="다음: 13차시: 자유 응용물 제작 ② - 디테일과 목업">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                13차시: 자유 응용물 제작 ② - 디테일과 목업
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 정선화 · 선린인터넷고 | <a href='https://eduflow-greatsong.fly.dev/'>EduFlow</a>로 제작
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.indexes", "navigation.instant", "navigation.path", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../javascripts/title-link.js"></script>
+      
+        <script src="../javascripts/mermaid-config.js"></script>
+      
+        <script src="../javascripts/scroll-progress.js"></script>
+      
+        <script src="../javascripts/eduflow-nav.js"></script>
+      
+        <script src="../javascripts/lightbox.js"></script>
+      
+    
+  </body>
+</html>

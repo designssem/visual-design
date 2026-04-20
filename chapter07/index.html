@@ -1,0 +1,3053 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="가상의 브랜드를 직접 만들어보며 브랜딩 디자인의 전 과정(기획→기본시스템→응용시스템)을 체험하는 16차시 실습 교재입니다.">
+      
+      
+        <meta name="author" content="정선화 · 선린인터넷고 (EduFlow)">
+      
+      
+      
+        <link rel="prev" href="../chapter06/">
+      
+      
+        <link rel="next" href="../chapter08/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>7차시: 브랜드 컬러 시스템 설계하기 - 브랜딩 디자인 실습 교육자료</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#7" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="브랜딩 디자인 실습 교육자료" class="md-header__button md-logo" aria-label="브랜딩 디자인 실습 교육자료" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            브랜딩 디자인 실습 교육자료
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7차시: 브랜드 컬러 시스템 설계하기
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 1 - 브랜딩의 이해와 기획
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../chapter05/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 2 - 기본 디자인 시스템 구축
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter10/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 3 - 응용 시스템 실습
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter15/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 4 - 마무리: 발표와 성찰
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="브랜딩 디자인 실습 교육자료" class="md-nav__button md-logo" aria-label="브랜딩 디자인 실습 교육자료" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    브랜딩 디자인 실습 교육자료
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 1 - 브랜딩의 이해와 기획
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 1 - 브랜딩의 이해와 기획
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1차시: 브랜딩이란 무엇인가?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2차시: 국내 브랜드 사례 분석하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3차시: 나의 가상 브랜드 콘셉트 설계하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4차시: 브랜드 네이밍과 슬로건 만들기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2 - 기본 디자인 시스템 구축
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 2 - 기본 디자인 시스템 구축
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5차시: 로고 심볼 스케치와 아이데이션
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6차시: 로고타입과 시그니처 완성하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7차시: 브랜드 컬러 시스템 설계하기
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7차시: 브랜드 컬러 시스템 설계하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤔 왜 이걸 배우나요?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 오늘의 핵심 주제
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 오늘의 핵심 주제">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 컬러의 역할 분담
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 감성에서 색 뽑기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📐 컬러 규정집 만들기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱️ 수업 흐름
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏱️ 수업 흐름">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1단계: 색이 말을 건다 (8분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2단계: 컬러 시스템의 구조 (12분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3단계: 내 브랜드 팔레트 설계 (15분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4단계: 컬러 코드표 완성 (12분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5단계: 정리와 공유 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-8_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 1단계: 색이 말을 건다 (8분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 1단계: 색이 말을 건다 (8분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        색은 0.1초 만에 감정을 전달합니다
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        브랜드는 색을 '소유'합니다
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        색의 심리 — 기본 감정 사전
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-12_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 2단계: 컬러 시스템의 구조 (12분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 2단계: 컬러 시스템의 구조 (12분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        비유: 축구팀의 포지션
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        컬러 시스템의 3가지 역할
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="컬러 시스템의 3가지 역할">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 메인 컬러 (Primary, 1색)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secondary-2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 서브 컬러 (Secondary, 2-3색)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accent-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ 강조 컬러 (Accent, 1색)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#60-30-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        60-30-10 법칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmyk-rgb-hex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        색상 모드: CMYK / RGB / HEX
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-15_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 3단계: 내 브랜드 팔레트 설계 (15분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 3단계: 내 브랜드 팔레트 설계 (15분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        활동: 감정 키워드 → 컬러 매칭
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="활동: 감정 키워드 → 컬러 매칭">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        따라하기 1: 감정 키워드 분해 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        따라하기 2: 메인 컬러 1개 결정 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-2-3-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        따라하기 3: 서브 컬러 2-3개 선택 (4분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        따라하기 4: 강조 컬러 1개 정하기 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        따라하기 5: 팔레트 시각 점검 (2분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-12_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📐 4단계: 컬러 코드표 완성 (12분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📐 4단계: 컬러 코드표 완성 (12분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        컬러 규정집 워크시트
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="컬러 규정집 워크시트">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        내 브랜드 컬러 규정집
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        컬러 이름 짓기 — 작은 디테일, 큰 차이
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        사용 규칙 명시하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 형성 평가
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 형성 평가">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 이해도 점검
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 자기점검 체크리스트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💭 성찰
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💭 성찰">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        나의 오늘 정리
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔜 다음 차시 미리보기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔜 다음 차시 미리보기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8차시: 브랜드 타이포그래피 시스템 설계하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8차시: 브랜드 타이포그래피 규정 만들기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9차시: 그리드·여백 규정과 기본시스템 통합
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 3 - 응용 시스템 실습
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 3 - 응용 시스템 실습
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10차시: 명함 디자인 실습 (필수 응용물)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11차시: 자유 응용물 선정과 기획
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12차시: 자유 응용물 제작 ① - 레이아웃과 시안
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13차시: 자유 응용물 제작 ② - 디테일과 목업
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14차시: 브랜드 가이드북 통합 편집
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 4 - 마무리: 발표와 성찰
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 4 - 마무리: 발표와 성찰
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15차시: 브랜드 발표와 상호 피드백
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16차시: 프로젝트 성찰과 브랜딩 여정 정리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤔 왜 이걸 배우나요?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 오늘의 핵심 주제
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 오늘의 핵심 주제">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 컬러의 역할 분담
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 감성에서 색 뽑기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📐 컬러 규정집 만들기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱️ 수업 흐름
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏱️ 수업 흐름">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1단계: 색이 말을 건다 (8분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2단계: 컬러 시스템의 구조 (12분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3단계: 내 브랜드 팔레트 설계 (15분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4단계: 컬러 코드표 완성 (12분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5단계: 정리와 공유 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-8_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 1단계: 색이 말을 건다 (8분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 1단계: 색이 말을 건다 (8분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        색은 0.1초 만에 감정을 전달합니다
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        브랜드는 색을 '소유'합니다
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        색의 심리 — 기본 감정 사전
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-12_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 2단계: 컬러 시스템의 구조 (12분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 2단계: 컬러 시스템의 구조 (12분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        비유: 축구팀의 포지션
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        컬러 시스템의 3가지 역할
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="컬러 시스템의 3가지 역할">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 메인 컬러 (Primary, 1색)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secondary-2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 서브 컬러 (Secondary, 2-3색)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accent-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ 강조 컬러 (Accent, 1색)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#60-30-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        60-30-10 법칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmyk-rgb-hex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        색상 모드: CMYK / RGB / HEX
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-15_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 3단계: 내 브랜드 팔레트 설계 (15분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 3단계: 내 브랜드 팔레트 설계 (15분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        활동: 감정 키워드 → 컬러 매칭
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="활동: 감정 키워드 → 컬러 매칭">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        따라하기 1: 감정 키워드 분해 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        따라하기 2: 메인 컬러 1개 결정 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-2-3-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        따라하기 3: 서브 컬러 2-3개 선택 (4분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        따라하기 4: 강조 컬러 1개 정하기 (3분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        따라하기 5: 팔레트 시각 점검 (2분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-12_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📐 4단계: 컬러 코드표 완성 (12분)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📐 4단계: 컬러 코드표 완성 (12분)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        컬러 규정집 워크시트
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="컬러 규정집 워크시트">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        내 브랜드 컬러 규정집
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        컬러 이름 짓기 — 작은 디테일, 큰 차이
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        사용 규칙 명시하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 형성 평가
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 형성 평가">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 이해도 점검
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 자기점검 체크리스트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💭 성찰
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💭 성찰">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        나의 오늘 정리
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔜 다음 차시 미리보기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔜 다음 차시 미리보기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8차시: 브랜드 타이포그래피 시스템 설계하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="네비게이션" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../chapter05/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Part 2 - 기본 디자인 시스템 구축
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="7">7차시: 브랜드 컬러 시스템 설계하기<a class="headerlink" href="#7" title="Permanent link">&para;</a></h1>
+<div class="lesson-banner">
+<p><strong>⏰ 50분</strong> · 메인컬러 · 서브컬러 · 컬러규정 · <strong>난이도</strong> ●●●○○</p>
+<p><strong>학습목표</strong>: 브랜드 감성에 어울리는 컬러 팔레트를 설계하고, CMYK·RGB·HEX 코드로 정리한 컬러 시스템을 제작할 수 있습니다.</p>
+<blockquote>
+<p><strong>오늘의 질문</strong>: "파란색 스타벅스, 빨간색 카카오톡… 상상이 되나요? 색은 왜 브랜드의 얼굴이 되었을까요?"</p>
+</blockquote>
+</div>
+<hr />
+<h2 id="_1">🤔 왜 이걸 배우나요?<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>매장 앞을 지나다 간판을 채 읽기도 전에 "아, 저기 스타벅스네"라고 알아본 경험이 있을 겁니다. 그 순간 여러분의 뇌는 글자가 아니라 <strong>초록색</strong>을 먼저 읽은 것이죠.</p>
+<p>색은 브랜드가 세상에 내는 <strong>목소리의 톤</strong>입니다. 같은 "안녕하세요"라도 누군가는 차분하게, 누군가는 쾌활하게 말하듯, 브랜드도 색을 통해 성격을 드러냅니다. 6차시에서 만든 로고가 브랜드의 '얼굴'이라면, 오늘 설계할 컬러 시스템은 그 브랜드가 <strong>어디서나 일관되게 말하게 해주는 목소리</strong>입니다.</p>
+<p>이번 차시가 끝나면 여러분은 내 브랜드만의 팔레트를 만들고, 인쇄물과 웹 어디에서든 정확히 같은 색이 나오도록 하는 <strong>컬러 규정집</strong>을 가지게 됩니다.</p>
+<hr />
+<h2 id="_2">🎯 오늘의 핵심 주제<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="cards-grid">
+<div class="card card-orange">
+<h3 id="_3">🧠 컬러의 역할 분담<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>메인·서브·강조 컬러가 각자 무엇을 말하는지 이해합니다</p>
+</div>
+<div class="card card-purple">
+<h3 id="_4">🎨 감성에서 색 뽑기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>브랜드 감정 키워드를 색으로 번역하는 법을 익힙니다</p>
+</div>
+<div class="card card-blue">
+<h3 id="_5">📐 컬러 규정집 만들기<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>CMYK·RGB·HEX 코드를 정리해 실제로 쓸 수 있는 시스템을 완성합니다</p>
+</div>
+</div>
+<hr />
+<h2 id="_6">⏱️ 수업 흐름<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<div class="steps">
+<div class="step">
+<h4 id="1-8">1단계: 색이 말을 건다 (8분)<a class="headerlink" href="#1-8" title="Permanent link">&para;</a></h4>
+<p>유명 브랜드의 컬러 전략을 살펴보며 색의 힘을 느껴봅니다</p>
+</div>
+<div class="step">
+<h4 id="2-12">2단계: 컬러 시스템의 구조 (12분)<a class="headerlink" href="#2-12" title="Permanent link">&para;</a></h4>
+<p>메인·서브·강조 컬러의 역할을 개념으로 정리합니다</p>
+</div>
+<div class="step">
+<h4 id="3-15">3단계: 내 브랜드 팔레트 설계 (15분)<a class="headerlink" href="#3-15" title="Permanent link">&para;</a></h4>
+<p>감정 키워드에서 색을 뽑아 팔레트를 구성합니다</p>
+</div>
+<div class="step">
+<h4 id="4-12">4단계: 컬러 코드표 완성 (12분)<a class="headerlink" href="#4-12" title="Permanent link">&para;</a></h4>
+<p>CMYK·RGB·HEX 값을 정리한 규정집 워크시트를 작성합니다</p>
+</div>
+<div class="step">
+<h4 id="5-3">5단계: 정리와 공유 (3분)<a class="headerlink" href="#5-3" title="Permanent link">&para;</a></h4>
+<p>오늘 만든 팔레트를 짝과 공유하고 피드백합니다</p>
+</div>
+</div>
+<hr />
+<h2 id="1-8_1">📚 1단계: 색이 말을 건다 (8분)<a class="headerlink" href="#1-8_1" title="Permanent link">&para;</a></h2>
+<h3 id="01">색은 0.1초 만에 감정을 전달합니다<a class="headerlink" href="#01" title="Permanent link">&para;</a></h3>
+<p>사람이 사물을 볼 때, 형태보다 먼저 뇌에 도달하는 정보가 <strong>색</strong>이라는 연구가 있습니다. 글자를 읽기도 전에, 로고 모양을 인식하기도 전에, 색이 먼저 "이 브랜드는 이런 느낌이야"라고 말을 건넵니다.</p>
+<h3 id="_7">브랜드는 색을 '소유'합니다<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>잘 만든 브랜드는 특정 색을 자기 것으로 만들어버립니다. 아래 표를 보세요.</p>
+<table>
+<thead>
+<tr>
+<th>브랜드</th>
+<th>대표 색</th>
+<th>전달하는 감정</th>
+<th>왜 이 색일까?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>스타벅스</td>
+<td>딥 그린</td>
+<td>자연, 여유, 프리미엄</td>
+<td>커피 원두의 자연성, 오래 머무는 공간</td>
+</tr>
+<tr>
+<td>카카오</td>
+<td>옐로우</td>
+<td>친근함, 즐거움, 대중성</td>
+<td>누구나 쉽게 접근하는 메신저</td>
+</tr>
+<tr>
+<td>배달의민족</td>
+<td>민트</td>
+<td>경쾌함, 신선함, 재미</td>
+<td>일상적이지만 유쾌한 배달 경험</td>
+</tr>
+<tr>
+<td>넷플릭스</td>
+<td>레드</td>
+<td>강렬함, 몰입, 엔터테인먼트</td>
+<td>극장 커튼, 주목 끄는 긴장감</td>
+</tr>
+<tr>
+<td>삼성</td>
+<td>딥 블루</td>
+<td>신뢰, 전문성, 안정</td>
+<td>글로벌 기술 기업의 무게감</td>
+</tr>
+</tbody>
+</table>
+<p>같은 '파란색'이라도 페이스북의 밝은 블루와 삼성의 딥 블루는 다른 이야기를 합니다. <strong>색은 그 자체로 의미가 아니라, 브랜드와 결합할 때 의미가 됩니다.</strong></p>
+<h3 id="_8">색의 심리 — 기본 감정 사전<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>색 계열</th>
+<th>주로 연상되는 감정</th>
+<th>자주 쓰이는 업종</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>레드</td>
+<td>열정, 긴급함, 식욕, 사랑</td>
+<td>음식, 엔터테인먼트, 스포츠</td>
+</tr>
+<tr>
+<td>오렌지</td>
+<td>활기, 친근함, 창의성</td>
+<td>아동, 캐주얼 식음료, 스타트업</td>
+</tr>
+<tr>
+<td>옐로우</td>
+<td>즐거움, 낙관, 주목</td>
+<td>메신저, 어린이, 저가형</td>
+</tr>
+<tr>
+<td>그린</td>
+<td>자연, 건강, 성장, 안정</td>
+<td>친환경, 헬스케어, 금융</td>
+</tr>
+<tr>
+<td>블루</td>
+<td>신뢰, 전문성, 차분함</td>
+<td>IT, 금융, 의료, 교육</td>
+</tr>
+<tr>
+<td>퍼플</td>
+<td>창의, 고급, 신비</td>
+<td>뷰티, 럭셔리, 예술</td>
+</tr>
+<tr>
+<td>블랙</td>
+<td>고급, 권위, 세련</td>
+<td>패션, 명품, 프리미엄</td>
+</tr>
+<tr>
+<td>화이트</td>
+<td>순수, 미니멀, 깨끗함</td>
+<td>뷰티, 의료, 테크</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>주의</strong>: 이 표는 출발점일 뿐입니다. 같은 레드라도 명도·채도에 따라 '고급 와인'이 되기도 하고 '저가 할인'이 되기도 합니다. 색의 의미는 <strong>톤(tone)</strong>으로 완성됩니다.</p>
+</blockquote>
+<hr />
+<h2 id="2-12_1">📚 2단계: 컬러 시스템의 구조 (12분)<a class="headerlink" href="#2-12_1" title="Permanent link">&para;</a></h2>
+<h3 id="_9">비유: 축구팀의 포지션<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>좋은 축구팀에는 공격수, 미드필더, 수비수가 있습니다. 모두가 공격만 하거나 모두가 수비만 한다면 경기가 되지 않겠죠. 컬러 시스템도 똑같습니다. <strong>모든 색이 똑같이 튀면 브랜드의 목소리가 산만해집니다.</strong> 각자의 포지션이 있어야 합니다.</p>
+<h3 id="3">컬러 시스템의 3가지 역할<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<div class="mermaid">flowchart TD
+    A[브랜드 컬러 시스템] --&gt; B[메인 컬러&lt;br/&gt;1색]
+    A --&gt; C[서브 컬러&lt;br/&gt;2-3색]
+    A --&gt; D[강조 컬러&lt;br/&gt;1색]
+    B --&gt; B1[브랜드의 얼굴&lt;br/&gt;로고, 간판]
+    C --&gt; C1[분위기 보조&lt;br/&gt;배경, 일러스트]
+    D --&gt; D1[시선 집중&lt;br/&gt;버튼, 할인표시]</div>
+<p>세 가지 역할을 자세히 봅시다.</p>
+<h4 id="primary-1">🎯 메인 컬러 (Primary, 1색)<a class="headerlink" href="#primary-1" title="Permanent link">&para;</a></h4>
+<p>브랜드를 <strong>한 색으로 요약</strong>했을 때 나오는 바로 그 색입니다. 로고, 간판, 대표 이미지에 쓰이며, 사람들이 "아, 그 브랜드 OO색이잖아"라고 말할 때의 그 색이죠.</p>
+<ul>
+<li><strong>역할</strong>: 브랜드 인식의 80%를 담당</li>
+<li><strong>비율</strong>: 전체 디자인의 약 60%</li>
+<li><strong>예시</strong>: 스타벅스의 딥 그린, 에르메스의 오렌지</li>
+</ul>
+<h4 id="secondary-2-3">🎨 서브 컬러 (Secondary, 2-3색)<a class="headerlink" href="#secondary-2-3" title="Permanent link">&para;</a></h4>
+<p>메인 컬러와 <strong>잘 어울리면서 분위기를 풍부하게</strong> 만드는 색입니다. 배경, 일러스트, 보조 그래픽에 쓰입니다. 메인과 같은 계열이거나, 메인을 돋보이게 하는 중성색(회색·베이지·아이보리 등)인 경우가 많습니다.</p>
+<ul>
+<li><strong>역할</strong>: 메인을 지지하는 조연</li>
+<li><strong>비율</strong>: 전체 디자인의 약 30%</li>
+<li><strong>예시</strong>: 스타벅스의 블랙, 크림, 브라운</li>
+</ul>
+<h4 id="accent-1">⚡ 강조 컬러 (Accent, 1색)<a class="headerlink" href="#accent-1" title="Permanent link">&para;</a></h4>
+<p>가장 적게 쓰지만 <strong>시선을 끌어야 할 때</strong> 꺼내는 색입니다. "지금 클릭하세요" 버튼, 할인 표시, 중요 알림 같은 곳에요. 메인·서브와 <strong>대비가 큰 색</strong>을 고르는 게 포인트입니다.</p>
+<ul>
+<li><strong>역할</strong>: 중요한 지점에 시선 모으기</li>
+<li><strong>비율</strong>: 전체 디자인의 약 10%</li>
+<li><strong>예시</strong>: 보라색 메인 브랜드에서 노란색 강조</li>
+</ul>
+<h3 id="60-30-10">60-30-10 법칙<a class="headerlink" href="#60-30-10" title="Permanent link">&para;</a></h3>
+<p>인테리어에서 시작된 유명한 배색 법칙입니다. 브랜딩에서도 그대로 통합니다.</p>
+<table>
+<thead>
+<tr>
+<th>비율</th>
+<th>역할</th>
+<th>어디에 쓰나요?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>60%</strong></td>
+<td>메인 컬러</td>
+<td>큰 면적, 배경, 대표 이미지</td>
+</tr>
+<tr>
+<td><strong>30%</strong></td>
+<td>서브 컬러</td>
+<td>보조 영역, 그래픽 요소</td>
+</tr>
+<tr>
+<td><strong>10%</strong></td>
+<td>강조 컬러</td>
+<td>버튼, 아이콘, 핵심 포인트</td>
+</tr>
+</tbody>
+</table>
+<p>이 비율을 지키면 브랜드가 <strong>조화로우면서도 단조롭지 않게</strong> 보입니다.</p>
+<h3 id="cmyk-rgb-hex">색상 모드: CMYK / RGB / HEX<a class="headerlink" href="#cmyk-rgb-hex" title="Permanent link">&para;</a></h3>
+<p>브랜드 컬러는 <strong>인쇄물</strong>(명함, 포스터)과 <strong>디지털</strong>(웹사이트, 앱)에서 모두 쓰여야 합니다. 그런데 두 매체는 색을 만드는 방식이 다르기 때문에, 각각의 코드를 따로 기록해야 합니다.</p>
+<table>
+<thead>
+<tr>
+<th>모드</th>
+<th>사용처</th>
+<th>원리</th>
+<th>예시 표기</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CMYK</strong></td>
+<td>인쇄 (명함, 포스터, 패키지)</td>
+<td>잉크를 섞어서 색을 만듦(감산혼합)</td>
+<td>C:100 M:0 Y:80 K:40</td>
+</tr>
+<tr>
+<td><strong>RGB</strong></td>
+<td>화면 (TV, 모니터)</td>
+<td>빛을 섞어서 색을 만듦(가산혼합)</td>
+<td>R:0 G:100 B:50</td>
+</tr>
+<tr>
+<td><strong>HEX</strong></td>
+<td>웹·앱 (HTML, CSS)</td>
+<td>RGB를 16진수로 표기한 코드</td>
+<td>#006432</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>왜 따로 기록하나요?</strong> 같은 딥 그린이라도 CMYK로 출력한 명함과 RGB로 보이는 모니터 화면은 미묘하게 다릅니다. 브랜드가 "어디서든 같은 색"을 유지하려면 <strong>각 매체별 정확한 수치</strong>를 미리 정해둬야 합니다.</p>
+</blockquote>
+<hr />
+<h2 id="3-15_1">🎨 3단계: 내 브랜드 팔레트 설계 (15분)<a class="headerlink" href="#3-15_1" title="Permanent link">&para;</a></h2>
+<h3 id="_10">활동: 감정 키워드 → 컬러 매칭<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>4차시에서 정한 여러분의 브랜드 감정 키워드 3개를 떠올려 보세요. 예: "따뜻한, 신뢰감 있는, 젊은"</p>
+<p>이제 그 키워드를 <strong>색으로 번역</strong>해봅시다.</p>
+<h4 id="1-3">따라하기 1: 감정 키워드 분해 (3분)<a class="headerlink" href="#1-3" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>감정 키워드</th>
+<th>떠오르는 이미지</th>
+<th>연관 색 계열</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(예: 따뜻한)</td>
+<td>난로, 햇살, 담요</td>
+<td>오렌지, 옐로우, 브라운</td>
+</tr>
+<tr>
+<td>(내 키워드 1)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(내 키워드 2)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(내 키워드 3)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-1-3">따라하기 2: 메인 컬러 1개 결정 (3분)<a class="headerlink" href="#2-1-3" title="Permanent link">&para;</a></h4>
+<p>세 키워드의 교집합이 되는 <strong>하나의 색 계열</strong>을 고르세요. 그 후 명도·채도를 조절해 구체적인 한 색으로 좁힙니다.</p>
+<blockquote>
+<p><strong>Tip</strong>: 같은 오렌지라도 밝은 오렌지(#FF9933)는 '발랄'하고, 어두운 오렌지(#CC5500)는 '따뜻하고 고급'입니다. 키워드에 더 맞는 톤을 찾아보세요.</p>
+</blockquote>
+<h4 id="3-2-3-4">따라하기 3: 서브 컬러 2-3개 선택 (4분)<a class="headerlink" href="#3-2-3-4" title="Permanent link">&para;</a></h4>
+<p>메인 컬러와 어울리는 서브 컬러를 고르는 3가지 전략입니다.</p>
+<table>
+<thead>
+<tr>
+<th>전략</th>
+<th>방법</th>
+<th>느낌</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>동일 계열</strong></td>
+<td>메인 색의 밝기만 다르게</td>
+<td>차분하고 통일감 있음</td>
+</tr>
+<tr>
+<td><strong>인접 색상</strong></td>
+<td>색상환에서 옆에 있는 색</td>
+<td>부드럽고 조화로움</td>
+</tr>
+<tr>
+<td><strong>중성색 조합</strong></td>
+<td>회색·베이지·아이보리·블랙</td>
+<td>세련되고 실용적</td>
+</tr>
+</tbody>
+</table>
+<p>초보자는 <strong>중성색 조합</strong>이 가장 안전하고 세련된 선택입니다. 메인 1색 + 중성 2색이면 웬만한 상황은 다 커버됩니다.</p>
+<h4 id="4-1-3">따라하기 4: 강조 컬러 1개 정하기 (3분)<a class="headerlink" href="#4-1-3" title="Permanent link">&para;</a></h4>
+<p>메인·서브와 <strong>시각적 대비가 강한 색</strong>을 하나 고르세요. 색상환에서 메인의 <strong>반대편</strong>에 있는 색을 찾으면 쉽습니다.</p>
+<table>
+<thead>
+<tr>
+<th>메인 컬러</th>
+<th>추천 강조 컬러</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>그린 계열</td>
+<td>레드, 핑크</td>
+</tr>
+<tr>
+<td>블루 계열</td>
+<td>오렌지, 옐로우</td>
+</tr>
+<tr>
+<td>옐로우 계열</td>
+<td>퍼플, 딥블루</td>
+</tr>
+<tr>
+<td>레드 계열</td>
+<td>그린, 민트</td>
+</tr>
+</tbody>
+</table>
+<h4 id="5-2">따라하기 5: 팔레트 시각 점검 (2분)<a class="headerlink" href="#5-2" title="Permanent link">&para;</a></h4>
+<p>5개 색을 옆에 나란히 놓고 다음을 점검합니다.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 메인 컬러가 한눈에 가장 강해 보이나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 서브 컬러가 메인을 방해하지 않고 받쳐주나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 강조 컬러가 적절한 '긴장감'을 만드나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 전체가 처음 정한 감정 키워드와 어울리나요?</li>
+</ul>
+<hr />
+<h2 id="4-12_1">📐 4단계: 컬러 코드표 완성 (12분)<a class="headerlink" href="#4-12_1" title="Permanent link">&para;</a></h2>
+<h3 id="_11">컬러 규정집 워크시트<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>디자인 툴(포토샵, 일러스트레이터, Figma, 미리캔버스 등)에서 선택한 색을 클릭하면 CMYK·RGB·HEX 값이 모두 표시됩니다. 그 값을 아래 표에 옮겨 적으세요.</p>
+<h4 id="_12">내 브랜드 컬러 규정집<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>역할</th>
+<th>컬러 이름</th>
+<th>HEX</th>
+<th>RGB</th>
+<th>CMYK</th>
+<th>주 사용처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>메인</td>
+<td>(예: 미드나잇 블루)</td>
+<td>#1A2B5F</td>
+<td>26, 43, 95</td>
+<td>C:95 M:85 Y:30 K:30</td>
+<td>로고, 간판</td>
+</tr>
+<tr>
+<td>서브 1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>배경, 본문 텍스트</td>
+</tr>
+<tr>
+<td>서브 2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>보조 그래픽</td>
+</tr>
+<tr>
+<td>서브 3 (선택)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>일러스트</td>
+</tr>
+<tr>
+<td>강조</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>버튼, 알림</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_13">컬러 이름 짓기 — 작은 디테일, 큰 차이<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>단순히 "파란색 1, 파란색 2"로 쓰지 말고, <strong>브랜드 세계관에 어울리는 이름</strong>을 붙이세요. 팀원들과 소통할 때 훨씬 명확해지고, 브랜드에 이야기가 생깁니다.</p>
+<table>
+<thead>
+<tr>
+<th>평범한 이름</th>
+<th>브랜드다운 이름</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>진한 초록</td>
+<td>포레스트 그린(Forest Green)</td>
+</tr>
+<tr>
+<td>연한 주황</td>
+<td>선셋 피치(Sunset Peach)</td>
+</tr>
+<tr>
+<td>회색</td>
+<td>클라우드 그레이(Cloud Gray)</td>
+</tr>
+<tr>
+<td>검정</td>
+<td>미드나잇 블랙(Midnight Black)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_14">사용 규칙 명시하기<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>컬러 규정집에는 <strong>하면 안 되는 것</strong>도 적어두면 좋습니다.</p>
+<blockquote>
+<p><strong>사용 가이드 예시</strong></p>
+<ul>
+<li>✅ 메인 컬러는 로고 배경으로만 사용합니다</li>
+<li>✅ 강조 컬러는 한 화면에 1-2곳에만 사용합니다</li>
+<li>❌ 메인 컬러를 임의로 밝기 조절하여 사용하지 않습니다</li>
+<li>❌ 규정 외의 색을 브랜드 자료에 섞어 쓰지 않습니다</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="_15">⚠️ 자주 하는 실수<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>실수</th>
+<th>왜 문제인가요?</th>
+<th>해결책</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>색을 5개 이상 쓰기</td>
+<td>브랜드 인상이 흐려짐</td>
+<td>메인1 + 서브2-3 + 강조1로 제한</td>
+</tr>
+<tr>
+<td>CMYK만 기록하기</td>
+<td>웹에서 다른 색으로 보임</td>
+<td>RGB·HEX도 반드시 병기</td>
+</tr>
+<tr>
+<td>유행 색만 고르기</td>
+<td>2-3년 뒤 촌스러워짐</td>
+<td>감정 키워드 기반으로 선택</td>
+</tr>
+<tr>
+<td>경쟁 브랜드와 비슷한 색</td>
+<td>브랜드 혼동 발생</td>
+<td>같은 업종 3개 이상 조사 후 차별화</td>
+</tr>
+<tr>
+<td>명도 대비 부족</td>
+<td>가독성 떨어짐, 접근성 낮음</td>
+<td>밝은 배경 + 어두운 글자 대비 확보</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_16">📝 형성 평가<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<div class="assessment">
+<h3 id="_17">📝 이해도 점검<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p><strong>객관식 1.</strong> 컬러 시스템에서 '강조 컬러(Accent)'의 역할로 가장 알맞은 것은?</p>
+<p>① 브랜드를 대표하며 로고에 사용한다
+② 전체 디자인의 60%를 차지하며 분위기를 주도한다
+③ 중요한 지점에 시선을 끌기 위해 적게 사용한다
+④ 메인 컬러의 밝기만 조절한 버전이다</p>
+<details>
+<summary>정답 확인</summary>
+
+**정답: ③**
+
+해설: 강조 컬러는 전체의 약 10%만 사용하지만, 버튼·알림·중요 포인트 등 **시선을 집중시켜야 하는 곳**에 쓰입니다. ①은 메인, ②는 메인, ④는 서브 컬러에 대한 설명입니다.
+
+</details>
+<p><strong>객관식 2.</strong> 다음 중 인쇄물 제작 시 반드시 기록해야 할 색상 모드는?① RGB
+② HEX
+③ CMYK
+④ HSB</p>
+<details>
+<summary>정답 확인</summary>
+
+**정답: ③**
+
+해설: **CMYK는 잉크를 섞어 색을 만드는 인쇄용 색상 모드**입니다. RGB와 HEX는 모니터·웹 등 빛을 사용하는 디지털 매체용입니다. 다만 실제 브랜드 컬러 규정집에는 매체에 관계없이 쓸 수 있도록 CMYK·RGB·HEX를 **모두 병기**하는 것이 원칙입니다.
+
+</details>
+<p><strong>객관식 3.</strong> 60-30-10 법칙에 따라 브랜드 컬러를 배치할 때, 가장 넓은 면적(60%)을 차지해야 하는 색은?</p>
+<p>① 메인 컬러
+② 서브 컬러
+③ 강조 컬러
+④ 중성 회색</p>
+<details>
+<summary>정답 확인</summary>
+
+**정답: ①**
+
+해설: 60-30-10 법칙은 **메인 60% / 서브 30% / 강조 10%** 비율로 배치하여 시각적 안정감과 포인트를 동시에 얻는 배색 원칙입니다.
+
+</details>
+<p><strong>서술형.</strong> 여러분이 설계한 브랜드 메인 컬러를 한 가지 고르고, 그 색을 선택한 이유를 브랜드의 감정 키워드와 연결하여 2-3문장으로 설명해 보세요.</p>
+<details>
+<summary>작성 예시</summary>
+
+**예시 답안**
+
+&gt; 저의 브랜드 메인 컬러는 **포레스트 그린(#2E5D3A)** 입니다. 브랜드 감정 키워드인 '자연스러운, 믿음직한, 차분한'이라는 느낌을 전달하기 위해 숲의 깊은 녹색을 선택했습니다. 밝은 연두 대신 어두운 톤을 고른 이유는 '차분함'과 '신뢰감'을 더 강하게 전하기 위해서입니다.
+
+**좋은 답안의 조건**
+- 색 이름과 HEX 값이 구체적으로 제시됨
+- 감정 키워드와 색의 연결이 자연스러움
+- 톤(명도·채도)을 선택한 이유까지 설명됨
+
+</details>
+<h3 id="_18">✅ 자기점검 체크리스트<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 메인·서브·강조 컬러가 각각 어떤 역할을 하는지 설명할 수 있습니다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 60-30-10 법칙이 무엇인지 이해하고 있습니다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 내 브랜드의 감정 키워드로부터 색을 뽑아낼 수 있습니다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> CMYK·RGB·HEX의 차이와 각각의 사용처를 구분할 수 있습니다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 내 브랜드 컬러 규정집 워크시트를 작성했습니다</li>
+</ul>
+</div>
+<hr />
+<h2 id="_19">💭 성찰<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<p>오늘 여러분은 브랜드에 <strong>목소리의 톤</strong>을 입혔습니다. 로고가 브랜드의 얼굴이라면, 컬러는 브랜드가 어디서 마주쳐도 "나야"라고 말해주는 <strong>일관된 말투</strong>입니다.</p>
+<p>한 가지만 기억하세요. <strong>색은 많을수록 약해집니다.</strong> 5개 이내로 제한된 팔레트가 50개의 색보다 훨씬 강한 인상을 남깁니다. 좋아하는 색을 다 넣고 싶은 유혹을 이기고, <strong>가장 필요한 색만 골라내는 절제</strong>가 브랜드 컬러 시스템의 핵심입니다.</p>
+<blockquote>
+<p>💡 <strong>오늘의 한 줄</strong>
+"좋은 브랜드는 한 가지 색으로 기억된다."</p>
+</blockquote>
+<h3 id="_20">나의 오늘 정리<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p>다음 질문에 스스로 답해보세요.</p>
+<ul>
+<li>내 브랜드의 메인 컬러는 무엇이고, 왜 그 색인가요?</li>
+<li>내 팔레트에서 가장 고민이 된 색은 무엇이었나요?</li>
+<li>같은 업종의 다른 브랜드와 내 컬러는 어떻게 다른가요?</li>
+</ul>
+<hr />
+<h2 id="_21">🔜 다음 차시 미리보기<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
+<h3 id="8">8차시: 브랜드 타이포그래피 시스템 설계하기<a class="headerlink" href="#8" title="Permanent link">&para;</a></h3>
+<p>브랜드가 <strong>어떤 색으로 말하는지</strong>를 오늘 정했다면, 다음 시간에는 <strong>어떤 글씨체로 말하는지</strong>를 정합니다. 같은 문장이라도 명조체로 쓰면 '고전적', 고딕체로 쓰면 '현대적'으로 읽히는 것처럼, 폰트는 브랜드의 <strong>말투</strong>를 결정합니다.</p>
+<ul>
+<li>세리프 vs 산세리프 — 어떤 성격을 전할까?</li>
+<li>제목용·본문용 폰트 조합 원칙</li>
+<li>브랜드 타이포그래피 규정 만들기</li>
+</ul>
+<p>오늘 만든 컬러 규정집 옆에, 다음 시간에는 타이포 규정집이 나란히 놓일 거예요. 그렇게 여러분만의 <strong>브랜드 기본 시스템</strong>이 한 걸음씩 완성됩니다. 🎨</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+          
+          <a href="../chapter06/" class="md-footer__link md-footer__link--prev" aria-label="이전: 6차시: 로고타입과 시그니처 완성하기">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                6차시: 로고타입과 시그니처 완성하기
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../chapter08/" class="md-footer__link md-footer__link--next" aria-label="다음: 8차시: 브랜드 타이포그래피 규정 만들기">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                8차시: 브랜드 타이포그래피 규정 만들기
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 정선화 · 선린인터넷고 | <a href='https://eduflow-greatsong.fly.dev/'>EduFlow</a>로 제작
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.indexes", "navigation.instant", "navigation.path", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="../javascripts/title-link.js"></script>
+      
+        <script src="../javascripts/mermaid-config.js"></script>
+      
+        <script src="../javascripts/scroll-progress.js"></script>
+      
+        <script src="../javascripts/eduflow-nav.js"></script>
+      
+        <script src="../javascripts/lightbox.js"></script>
+      
+    
+  </body>
+</html>
